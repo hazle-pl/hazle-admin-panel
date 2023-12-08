@@ -1,0 +1,16 @@
+$spacings: ("0": 0, "1": 10px, "2": 20px, "3": 30px, "4": 40px, "5": 50px , "6": 60px , "7": 70px , "8": 80px , "9": 90px , "10": 100px , "11": 110px , "12": 120px);
+
+@each $class, $number in $spacings{
+    .padding-top-#{$class}{
+        padding-top: $number;
+    }
+    .padding-bottom-#{$class}{
+        padding-bottom: $number;
+    }
+    .margin-top-#{$class}{
+        margin-top: $number;
+    }
+    .margin-bottom-#{$class}{
+        margin-bottom: $number;
+    }
+}

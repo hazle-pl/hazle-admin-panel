@@ -1,0 +1,14 @@
+//Utilities
+@import 'utilities/variables.scss';
+@import 'utilities/breakpoints.scss';
+@import 'utilities/color-palette.scss';
+@import 'utilities/typography.scss';
+@import 'utilities/spacings.scss';
+@import 'utilities/grid.scss';
+@import 'utilities/global.scss';
+
+//Global imports
+@import 'utilities/toastify.scss';
+
+//Components
+@import 'components/header.scss';
