@@ -1,18 +1,8 @@
 import * as express from 'express';
-import api from './api/traffic';
 import * as path from 'path';
 
 const app = express();
 
-// app.use((req, res, next) => {
-//   if ((req.headers as { [key: string]: string })['x-forwarded-proto'] !== 'https' && req.hostname !== 'localhost') {
-//     res.redirect(301, `https://${req.hostname}${req.originalUrl}`);
-//   } else {
-//     next();
-//   }
-// });
-
-app.use(api);
 
 
 app.use(express.static(path.join(__dirname, '../public')));
